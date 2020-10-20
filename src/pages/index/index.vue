@@ -1,7 +1,8 @@
 <template>
-  <view>View 标签</view>
-  <div>Div标签</div>
-  <text>Text 标签，前面应该有Div标签</text>
+  <view>view 标签</view>
+  <div>div标签</div>
+  <article>article标签</article>
+  <text>text 标签，前面应该有div和article标签</text>
 </template>
 
 <script>
