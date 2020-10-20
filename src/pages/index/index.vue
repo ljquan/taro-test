@@ -1,47 +1,32 @@
 <template>
-  <AtAccordion
-    @click="onClick"
-    title='点这里报错'
-    :open="value1"
-  >
-    <AtList :hasBorder="false">
-      <AtListItem
-        title='标题文字'
-        thumb='https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png'
-      />
-      <AtListItem
-        title='标题文字'
-        note='描述信息'
-        thumb='http://img12.360buyimg.com/jdphoto/s72x72_jfs/t10660/330/203667368/1672/801735d7/59c85643N31e68303.png'
-      />
-    </AtList>
-  </AtAccordion>
+  <view>View 标签</view>
+  <div>Div标签</div>
+  <text>Text 标签，前面应该有Div标签</text>
 </template>
 
 <script>
-import { AtAccordion, AtList, AtListItem } from 'taro-ui-vue3'
+import { AtAccordion, AtList, AtListItem } from "taro-ui-vue3";
 export default {
-  name: 'AccordionDemo',
+  name: "AccordionDemo",
   components: {
     AtAccordion,
     AtList,
-    AtListItem
+    AtListItem,
   },
   data() {
     return {
-      value1: false
-    }
+      value1: false,
+    };
   },
   methods: {
     onClick(val) {
-      this.value1 = val
-    }
+      this.value1 = val;
+    },
   },
-}
+};
 </script>
 
 <style lang="scss">
 @import "taro-ui-vue3/dist/style/components/accordion.scss";
 @import "taro-ui-vue3/dist/style/components/icon.scss";
-
 </style>
